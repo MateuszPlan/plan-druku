@@ -1,0 +1,74 @@
+﻿;GOTOWE;ZLECENIE;PLIKI;NAZWA;połączenie;ILOŚĆ;ILOŚĆ PRZYRZĄDÓW;MATERIAŁ;DATA DRUKU;TERMIN ;OKŁADKA;ŚRODKI;FARBA;;;
+1;;;;(  ) ;;;;;;;;;;FAŁSZ;(  ) ;(  ) 
+2;;;;(  ) ;;;;;;;;;;FAŁSZ;(  ) ;(  ) 
+3;;;;(  ) ;;;;;;;;;;FAŁSZ;(  ) ;(  ) 
+4;;;;(  ) ;;;;;;;;;;FAŁSZ;(  ) ;(  ) 
+5;;;;(  ) ;;;;;;;;;;FAŁSZ;( BRAK ) WWP 10 (b);( BRAK ) WWP 10 (b)
+6;;;;(  ) ;;;;;;;;;;FAŁSZ;(  ) ;(  ) 
+7;;;;(  ) ;;;;;;;;;;FAŁSZ;( BRAK ) SZEF PUBLIKACJA  (b);( BRAK ) SZEF PUBLIKACJA  (b)
+8;;;;(  ) ;;;;;;;;;;FAŁSZ;( 21584 ) KALENDARZ ANMAR SJ CYFRA KRAFT (b);( 21584 ) KALENDARZ ANMAR SJ CYFRA KRAFT (b)
+9;;;;(  ) ;;;;;;;;;;FAŁSZ;( 21605 ) ARPANEL (p);( 21605 ) ARPANEL (p)
+10;;;;(  ) ;;;;;;;;;;FAŁSZ;( 21611 ) ASCO MB5/ST/B TERMINARZ (b);( 21611 ) ASCO MB5/ST/B TERMINARZ (b)
+11;;;;(  ) ;;;;;;;;;;FAŁSZ;( 21612 ) SBB NOTES PUR 2024 (b);( 21612 ) SBB NOTES PUR 2024 (b)
+12;;;;(  ) ;;;;;;;;;;FAŁSZ;0;0
+13;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+14;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+15;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+16;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+17;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+18;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+19;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+20;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+21;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+22;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+23;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+24;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+25;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+26;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+27;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+28;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+29;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+31;SOMFY KALENDARZ ST st-1;;;(  ) ;;;;;;;;;;1;#N/D;
+32;SPECOL KALENDARZ;;;(  ) ;;;;;;;;;;2;#N/D;
+33;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+34;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+35;GMINA ŻORY KALENDARZ SJ OFFSET;;;(  ) ;;;2;TAK;ANONS TYDZ. 37;;KARTON GC-2 270G PLECY - 800ark. 700x500 ;PAPIER ST-2024 KREDA MATOWA 150G -600ark. 500x700 ;;3;#N/D;
+36;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+37;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+38;CBJ KALENDARZ ST CYFRA;;;(  ) ;;;2;TAK;ANONS TYDZ. 37;;KARTON GC-2 270G PLECY - 200ark. 1000x700;PAPIER ST-2024 KREDA MATOWA 150G -400ark. 500x700 ;;4;#N/D;
+39;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+40;;21583;NIE;( 21583 ) ANMAR KALENDARZ ST 2025 CYFRA (b);ANMAR KALENDARZ ST 2025 CYFRA;502;2;NA STANIE;;;KARTON GC-1 300G ORIENT BOARD PLECY - 280ark. 1000x700;KREDA MATOWA 150g - 450ark 500x700;;FAŁSZ;#N/D;
+41;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+42;;BRAK;NIE;( BRAK ) ELAMED INNA PUBLIKACJA (b);ELAMED INNA PUBLIKACJA;;;TAK;ANONS 16-17.09.2024;;;;;FAŁSZ;#N/D;
+43;;BRAK;NIE;( BRAK ) WWP 10 (b);WWP 10;;;TAK;ANONS 23-24.09.2024;;;;;5;#N/D;
+44;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+45;SP PARTNERS;;;(  ) ;;2000;2;TAK;ANONS NA 16-17.09.2024;;KREDA MATOWA 350g - 44x63 - 550 arkuszy;80g offset;;6;#N/D;
+46;;21603;NIE;( 21603 ) PSYCHOTERAPEUTA (b);PSYCHOTERAPEUTA;505;32;NA STANIE;ANONS;;offset 80g - 13300 ark. 440x630;;;FAŁSZ;#N/D;
+47;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+48;;BRAK;NIE;( BRAK ) SZEF PUBLIKACJA  (b);SZEF PUBLIKACJA ;2000;120;NIE;ANONS NA 20.09;08.10.2024;;;;7;#N/D;
+49;;21584;NIE;( 21584 ) KALENDARZ ANMAR SJ CYFRA KRAFT (b);KALENDARZ ANMAR SJ CYFRA KRAFT;362;;TAK;;;;krafliner ekologiczny 300g 700x100 - 70ark;;8;#N/D;
+50;;21604;NIE;( 21604 ) MAMBACAR WIZYTÓWKI (b);MAMBACAR WIZYTÓWKI;200000;2;TAK;ANONS NA 19.09.2024;;KREDA MATOWA 350g - 3650 ark. 500x700;;;FAŁSZ;#N/D;
+51;;21605;TAK;( 21605 ) ARPANEL (p);ARPANEL;552;CYFRA;NA STANIE;;GÓMAK INTRO NASZE BLOCZKI ST-1;;;;9;#N/D;
+52;;21611;NIE;( 21611 ) ASCO MB5/ST/B TERMINARZ (b);ASCO MB5/ST/B TERMINARZ;202;CYFRA;NIE;;;;;;10;#N/D;
+53;;21612;NIE;( 21612 ) SBB NOTES PUR 2024 (b);SBB NOTES PUR 2024;410;CYFRA;NA STANIE;;offset 80g - 8200ark. 430X610;oklejka kreda matowa 150g -  800ark.500x350;wyklejka przód i tył 430x610 offset 140g - 430x610;;11;#N/D;
+54;;21613;NIE;( 21613 ) SBB A6 TERMINARZ W OKL. DRUKOWANEJ (b);SBB A6 TERMINARZ W OKL. DRUKOWANEJ;302;OFFSET : 4;NIE;;;;;;FAŁSZ;#N/D;
+55;;21614;NIE;( 21614 ) SBB KALENDARZ ST YFRA KALENDARIUM Z ZEWN. (b);SBB KALENDARZ ST YFRA KALENDARIUM Z ZEWN.;404;CYFRA;NIE;;;;;;FAŁSZ;#N/D;
+;;21615;NIE;( 21615 ) laser spec Bloczki firmowe (notesy) klejone bez okładki (b);laser spec Bloczki firmowe (notesy) klejone bez okładki;302;OFFSET / CYFRA;NIE;;;;;;FAŁSZ;#N/D;
+;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+;;;;(  ) ;;;;;;;;;;FAŁSZ;#N/D;
+;;ODŚWIEŻ;;;;;;;;;;;;12;#N/D;
+;;2024_09_16;2024_09_17;2024_09_18;2024_09_19;2024_09_20;;;;;;;;;;
+;DATA;PONIEDZIAŁEK;WTOREK;ŚRODA;CZWARTEK;PIĄTEK;ANONS;;;;;;;;;
+;;PONIEDZIAŁEK \ 2024_09_16;WTOREK \ 2024_09_17;ŚRODA \ 2024_09_18;CZWARTEK \ 2024_09_19;PIĄTEK \ 2024_09_20;;;DALSZY HORYZONT;;;;;;;
+;;( 21603 ) PSYCHOTERAPEUTA (b);( BRAK ) ELAMED INNA PUBLIKACJA (b);( BRAK ) ELAMED INNA PUBLIKACJA (b);( 21604 ) MAMBACAR WIZYTÓWKI (b);SZEF PUBLIKACJA  (b);laser spec Bloczki firmowe (notesy) klejone bez okładki;;;;;;;;;
+;;(  ) ;(  ) ;(  ) ;(  ) ;(  ) ;( 21614 ) SBB KALENDARZ ST YFRA KALENDARIUM Z ZEWN. (b);;;;;;;;;
+;;(  ) ;(  ) ;(  ) ;(  ) ;(  ) ;( 21615 ) laser spec Bloczki firmowe (notesy) klejone bez okładki (b);;;;;;;;;
+;;(  ) ;(  ) ;(  ) ;(  ) ;(  ) ;( 21613 ) SBB A6 TERMINARZ W OKL. DRUKOWANEJ (b);;;;;;;;;
+;;(  ) ;(  ) ;(  ) ;(  ) ;(  ) ;( 21583 ) ANMAR KALENDARZ ST 2025 CYFRA (b);;;;;;;;;
+;;;;;;;;;;;;;;;;

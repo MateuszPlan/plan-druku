@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAN DRUKU</title>
+
+    <!-- Włączenie bibliotek DataTables i jQuery -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <!-- Włączenie biblioteki SheetJS (xlsx.js) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+    <!-- Dodanie niestandardowego stylu dla pastelowych kolorów -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #5a5a5a;
+        }
+        table.dataTable {
+            width: 80%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        table.dataTable thead th {
+            background-color: #a8d0e6; /* Pastelowy niebieski */
+            color: #fff;
+            padding: 10px;
+            text-align: left; /* Wyrównanie do lewej */
+            border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc; /* Dodanie pionowych linii */
+        }
+        table.dataTable tbody tr:nth-child(odd) {
+            background-color: #f9f9f9; /* Jasnoszary */
+        }
+        table.dataTable tbody tr:nth-child(even) {
+            background-color: #d9e4f5; /* Pastelowy błękitny */
+        }
+        table.dataTable tbody tr:hover {
+            background-color: #b8d7f1; /* Pastelowy błękitny - ciemniejszy */
+        }
+        table.dataTable tbody td {
+            padding: 8px;
+            text-align: left; /* Wyrównanie do lewej */
+            border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc; /* Dodanie pionowych linii */
+        }
+        div.dataTables_wrapper div.dataTables_filter input,
+        div.dataTables_wrapper div.dataTables_length select {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        .checked-cell {
+            background-color: #c8e6c9; /* Zielone tło dla zaznaczonego checkboxa */
+        }
+        .unchecked-cell {
+            background-color: #ffcccb; /* Czerwone tło dla odznaczonego checkboxa */
+        }
+        .info {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e7f0f9;
+            border: 1px solid #cce1f2;
+            display: none; /* Ukryj domyślnie */
+        }
+    </style>
+
+    <script>
+        function loadExcelData(file, containerId, range) {
+            var url = file;
+            var req = new XMLHttpRequest();
+            req.open("GET", url, true);
+            req.responseType = "arraybuffer";
+
+            req.onload = function(e) {
+                var data = new Uint8Array(req.response);
+                var workbook = XLSX.read(data, { type: "array" });
+
+                // Zakładamy, że dane znajdują się w pierwszym arkuszu
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Pobranie danych z określonego zakresu
+                var rangeData = XLSX.utils.sheet_to_json(worksheet, { header: 1, range: range });
+                console.log("Załadowano dane: ", rangeData); // Debugowanie, aby sprawdzić, czy dane są załadowane
+
+                displayData(rangeData, containerId);
+            };
+
+            req.send();
+        }
+
+        // Funkcja do wyświetlania danych w tabeli HTML
+        function displayData(data, containerId) {
+            if (data.length === 0) {
+                document.getElementById(containerId).innerHTML = '<p>Brak danych do wyświetlenia.</p>';
+                return;
+            }
+
+            // Tworzenie tabeli z odpowiednimi nagłówkami
+            var table = '<table class="display"><thead><tr>';
+            
+            // Nagłówki tabeli
+            data[0].forEach(function(header) {
+                table += '<th>' + header + '</th>';
+            });
+            table += '</tr></thead><tbody>';
+
+            // Dodanie danych do tabeli
+            for (var i = 1; i < data.length; i++) {
+                table += '<tr>';
+                data[i].forEach(function(cell) {
+                    if (typeof cell === 'string') {
+                        if (cell.trim().endsWith('(p)')) {
+                            // Usuwamy "(p)" i dodajemy tekst z zaznaczonym checkboxem
+                            var text = cell.replace('(p)', '').trim();
+                            table += '<td class="checked-cell">' + text + ' <input type="checkbox" checked disabled></td>';
+                        } else if (cell.trim().endsWith('(b)')) {
+                            // Usuwamy "(b)" i dodajemy tekst z odznaczonym checkboxem
+                            var text = cell.replace('(b)', '').trim();
+                            table += '<td class="unchecked-cell">' + text + ' <input type="checkbox" disabled></td>';
+                        } else {
+                            table += '<td>' + cell + '</td>';
+                        }
+                    } else {
+                        table += '<td>' + (cell !== undefined ? cell : '') + '</td>';
+                    }
+                });
+                table += '</tr>';
+            }
+
+            table += '</tbody></table>';
+            
+            // Wstawienie tabeli do strony HTML
+            document.getElementById(containerId).innerHTML = table;
+
+            // Inicjalizacja DataTables po wstawieniu tabeli do strony
+            $('#' + containerId + ' table').DataTable({
+                destroy: true, // Pozwala na wielokrotne odświeżanie tabeli
+                paging: true,
+                searching: true,
+                info: false
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Wczytywanie danych z pliku Excel z zakresu B68:K74
+            loadExcelData('plan_druk.xlsx', 'table-container-1', 'B68:K74');
+
+            // Dodanie odświeżania danych co 15 sekund
+            setInterval(function() {
+                loadExcelData('plan_druk.xlsx', 'table-container-1', 'B68:K74');
+            }, 15000);
+        });
+    </script>
+</head>
+<body>
+    <h1>PLAN DRUKU</h1>
+    
+    <!-- Kontener dla tabeli -->
+    <div id="table-container-1"></div>
+
+    <!-- Informacje o dostępności materiału -->
+    <div class="info"></div>
+</body>
+</html>
